@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Envoyé ! ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        .merci-container {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .icon-succes {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .btn-retour {
+            display: inline-block;
+            margin-top: 30px;
+            background: linear-gradient(135deg, #8A2BE2, #FF1493);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: transform 0.2s;
+        }
+        .btn-retour:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a> | 
+            <a href="apropos.html">À propos</a> | 
+            <a href="makeover.html">Service Makeover</a> | 
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="merci-container">
+            <div class="icon-succes">✨ ✉️ ✨</div>
+            <h1>Message bien envoyé !</h1>
+            <p>C'est la fête dans la boîte aux lettres ! Merci pour votre message, je l'ai bien reçu et je reviens vers vous très rapidement.</p>
+            
+            <a href="index.html" class="btn-retour">Retour à l'accueil</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Elodie2France - Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            // Premier tir au centre
+            confetti({
+                particleCount: 150,
+                spread: 80,
+                origin: { y: 0.6 },
+                colors: ['#8A2BE2', '#FF1493', '#FFD700', '#00FFFF']
+            });
+
+            // Petites répliques successives à gauche et à droite (effet feu d'artifice)
+            setTimeout(() => {
+                confetti({ particleCount: 50, angle: 60, spread: 55, origin: { x: 0, y: 0.8 }, colors: ['#8A2BE2', '#FF1493'] });
+            }, 250);
+            
+            setTimeout(() => {
+                confetti({ particleCount: 50, angle: 120, spread: 55, origin: { x: 1, y: 0.8 }, colors: ['#8A2BE2', '#FF1493'] });
+            }, 400);
+        });
+    </script>
+</body>
+</html>
