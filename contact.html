@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Me Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <nav>
+            <a href="index.html">Accueil</a> | 
+            <a href="apropos.html">À propos</a> | 
+            <a href="makeover.html">Service Makeover</a> | 
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<main>
+        <h1>Me contacter</h1>
+        <p>Pour toute demande de renseignement, de collaboration ou pour réserver une séance de makeover, vous pouvez utiliser le formulaire ci-dessous ou me rejoindre sur mes réseaux.</p>
+
+        <h2>Mes Réseaux Sociaux</h2>
+        <p>Suivez mon actualité et découvrez mes partages au quotidien :</p>
+        
+        <div class="reseaux-liens" style="margin-bottom: 40px;">
+            <a href="https://instagram.com/elodie2france" target="_blank" style="margin-right: 20px;">Instagram</a>
+            <a href="https://www.flickr.com/photos/elodie-de-france/" target="_blank" style="margin-right: 20px;">Flickr</a>
+            <a href="https://www.facebook.com/Elodie2france" target="_blank">Facebook</a>
+			<a href="https://x.com/elodiedefrance" target="_blank">Twitter (x)</a>
+        </div>
+
+        <h2>M'envoyer un message</h2>
+        <form action="https://formspree.io/f/VOTRE_CLE_ICI" method="POST">
+            <p>
+                <label for="nom">Nom ou Pseudo :</label><br>
+                <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+            </p>
+            <p>
+                <label for="email">Adresse email :</label><br>
+                <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+            </p>
+            <p>
+                <label for="sujet">Objet du message :</label><br>
+                <input type="text" id="sujet" name="sujet" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+            </p>
+            <p>
+                <label for="message">Votre message :</label><br>
+                <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; font-family: inherit;"></textarea>
+            </p>
+            <button type="submit" style="background: linear-gradient(135deg, #8A2BE2, #FF1493); color: white; border: none; padding: 12px 30px; font-size: 1em; font-weight: bold; border-radius: 25px; cursor: pointer;">Envoyer le message</button>
+        </form>
+    </main>
+    <footer><p>&copy; 2026 - Tous droits réservés.</p></footer>
+</body>
+</html>

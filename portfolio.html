@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <nav>
+            <a href="index.html">Accueil</a> | 
+            <a href="apropos.html">À propos</a> | 
+            <a href="makeover.html">Service Makeover</a> | 
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+<main>
+        <h1>Mon Portfolio</h1>
+        <p>Un retour en images et en souvenirs sur mon parcours à travers le temps et les pays.</p>
+
+        <!-- SECTION 1 -->
+        <section class="portfolio-item">
+            <h2>Les jeunes années</h2>
+            <div class="photo-placeholder">
+                <img src="images/jeunes-annees.jpg" alt="Les jeunes années" style="max-width:100%; border-radius:8px;">
+            </div>
+            <div class="interactions">
+                <button class="like-btn" onclick="toggleLike(this)">❤️ <span class="like-count">0</span></button>
+                <span class="share-label">Partager :</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-site.com/portfolio.html" target="_blank" class="share-link">Facebook</a> | 
+                <a href="https://twitter.com/intent/tweet?url=https://votre-site.com/portfolio.html&text=Découvrez mon portfolio" target="_blank" class="share-link">X</a>
+            </div>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="portfolio-item">
+            <h2>Bordeaux / St Etienne</h2>
+            <div class="photo-placeholder">
+                <img src="images/bordeaux-stetienne.jpg" alt="Bordeaux et Saint-Étienne" style="max-width:100%; border-radius:8px;">
+            </div>
+            <div class="interactions">
+                <button class="like-btn" onclick="toggleLike(this)">❤️ <span class="like-count">0</span></button>
+                <span class="share-label">Partager :</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-site.com/portfolio.html" target="_blank" class="share-link">Facebook</a> | 
+                <a href="https://twitter.com/intent/tweet?url=https://votre-site.com/portfolio.html" target="_blank" class="share-link">X</a>
+            </div>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="portfolio-item">
+            <h2>Chypre</h2>
+            <div class="photo-placeholder">
+                <img src="images/chypre.jpg" alt="Période Chypre" style="max-width:100%; border-radius:8px;">
+            </div>
+            <div class="interactions">
+                <button class="like-btn" onclick="toggleLike(this)">❤️ <span class="like-count">0</span></button>
+                <span class="share-label">Partager :</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-site.com/portfolio.html" target="_blank" class="share-link">Facebook</a> | 
+                <a href="https://twitter.com/intent/tweet?url=https://votre-site.com/portfolio.html" target="_blank" class="share-link">X</a>
+            </div>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section class="portfolio-item">
+            <h2>Russie</h2>
+            <div class="photo-placeholder">
+                <img src="images/russie.jpg" alt="Période Russie" style="max-width:100%; border-radius:8px;">
+            </div>
+            <div class="interactions">
+                <button class="like-btn" onclick="toggleLike(this)">❤️ <span class="like-count">0</span></button>
+                <span class="share-label">Partager :</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-site.com/portfolio.html" target="_blank" class="share-link">Facebook</a> | 
+                <a href="https://twitter.com/intent/tweet?url=https://votre-site.com/portfolio.html" target="_blank" class="share-link">X</a>
+            </div>
+        </section>
+
+        <!-- SECTION 5 -->
+        <section class="portfolio-item">
+            <h2>Et maintenant !</h2>
+            <div class="photo-placeholder">
+                <img src="images/maintenant.jpg" alt="Aujourd'hui" style="max-width:100%; border-radius:8px;">
+            </div>
+            <div class="interactions">
+                <button class="like-btn" onclick="toggleLike(this)">❤️ <span class="like-count">0</span></button>
+                <span class="share-label">Partager :</span>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://votre-site.com/portfolio.html" target="_blank" class="share-link">Facebook</a> | 
+                <a href="https://twitter.com/intent/tweet?url=https://votre-site.com/portfolio.html" target="_blank" class="share-link">X</a>
+            </div>
+        </section>
+
+        <!-- SCRIPT POUR LE SYSTEME DE LIKE -->
+        <script>
+            function toggleLike(button) {
+                let countSpan = button.querySelector('.like-count');
+                let currentCount = parseInt(countSpan.innerText);
+                
+                if (button.classList.contains('liked')) {
+                    button.classList.remove('liked');
+                    countSpan.innerText = currentCount - 1;
+                    button.style.background = "#ddd";
+                } else {
+                    button.classList.add('liked');
+                    countSpan.innerText = currentCount + 1;
+                    button.style.background = "#FF1493";
+                    button.style.color = "white";
+                }
+            }
+        </script>
+    </main>
+    </main>
+    <footer><p>&copy; 2026 - Tous droits réservés.</p></footer>
+</body>
+</html>
