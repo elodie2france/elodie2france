@@ -30,26 +30,30 @@
         </div>
 
         <h2>M'envoyer un message</h2>
+
 <form action="https://api.web3forms.com/submit" method="POST">
             
             <input type="hidden" name="access_key" value="6c9f0fd1-98a8-48c6-a051-4a93676f6852">
 
             <p>
                 <label for="nom">Nom ou Pseudo :</label><br>
-                <input type="text" id="nom" name="nom" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+                <input type="text" id="nom" name="name" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
             </p>
             <p>
                 <label for="email">Adresse email :</label><br>
-                <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
             </p>
             <p>
                 <label for="sujet">Objet du message :</label><br>
-                <input type="text" id="sujet" name="sujet" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
+                <input type="text" id="sujet" name="subject" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box;">
             </p>
             <p>
                 <label for="message">Votre message :</label><br>
                 <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; font-family: inherit;"></textarea>
             </p>
+
+            <input type="hidden" name="redirect" value="https://elodie2france.github.io/site-vitrine/index.html">
+
             <button type="submit" style="background: linear-gradient(135deg, #8A2BE2, #FF1493); color: white; border: none; padding: 12px 30px; font-size: 1em; font-weight: bold; border-radius: 25px; cursor: pointer;">Envoyer le message</button>
         </form>
     </main>
